@@ -28,6 +28,10 @@ nav {
     padding: 20px;
 }
 
+.emoji-wave {
+    font-size: 2em;
+}
+
 .nav-list {
     list-style-type: none;
     margin: 0;
