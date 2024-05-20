@@ -1,10 +1,110 @@
-*{
+/* Vibrant Theme Palette */
+:root {
+    --vibrant-blue: #29abe2;
+    --vibrant-purple: #9a1f6a;
+    --vibrant-orange: #f7931e;
+    --vibrant-green: #22b573;
+    --vibrant-red: #ed1c24;
+    --white: #ffffff;
+    --black: #000000;
+    --ash-grey: #B2BEB5;
+}
+
+/* Base styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--white);
+    background-color: var(--black);
     margin: 0;
     padding: 0;
-    font-family:'Franklin Gothic Medium', sans-serif;
-    box-sizing: border-box;
 }
-body {
-    background: #080808;
-    color: #fff;
+
+/* Navigation styles */
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2em;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+    color: var(--black);
+    background-color: var(--vibrant-blue);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 100px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: var(--vibrant-purple);
+}
+
+
+/* Responsive styles (add media queries here) */
+@media (min-width: 768px) {
+    /* Tablet styles */
+}
+
+@media (min-width: 1024px) {
+    /* Desktop styles */
+}
+#about #aboutme {
+    background-color: var(--ash-grey);
+    color: var(--black);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+#about #aboutme h3 {
+    color: var(--vibrant-purple);
+}
+
+#about #aboutme p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+#services #mission {
+    background-color: var(--ash-grey);
+    color: var(--black);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+#services #mission h3 {
+    color: var(--vibrant-purple);
+}
+
+#services #mission p {
+    font-size: 1rem;
+    line-height: 1.6;
 }
